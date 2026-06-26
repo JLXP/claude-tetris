@@ -4,6 +4,7 @@ const COLS = 10;
 const ROWS = 20;
 const BLOCK = 30;
 
+//comment
 const COLORS = [
   null,
   '#4dd0e1', // I - cyan
