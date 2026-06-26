@@ -6,6 +6,7 @@ const BLOCK = 30;
 
 //comment
 //comment 2
+//commrnt 3 
 const COLORS = [
   null,
   '#4dd0e1', // I - cyan
