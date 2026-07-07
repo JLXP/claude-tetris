@@ -39,7 +39,9 @@ jobs:
                index.html, style.css) para localizar el área relacionada. Publica
                UN comentario en el issue con:
                gh issue comment ${{ github.event.issue.number }} --body "<markdown>"
-               El comentario debe tener esta estructura en español:
+               El comentario debe estar escrito en GitHub Flavored Markdown (GFM) válido:
+               usa encabezados con ##/###, listas con -, bloques de código con ``` y
+               negrita/cursiva con **/*. Evita HTML crudo. Estructura en español:
                - **Resumen del problema**
                - **Área/archivo probablemente afectado** (ruta y, si aplica, función/línea)
                - **Causa probable**
