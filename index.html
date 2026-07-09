@@ -50,11 +50,60 @@
       </aside>
     </div>
 
+    <div id="start-screen" class="start-screen">
+      <div class="start-box">
+        <h2 class="start-title">TETRIS</h2>
+
+        <div class="leaderboard-section">
+          <span class="label">TOP 5</span>
+          <ol id="start-leaderboard-list" class="leaderboard-list"></ol>
+        </div>
+
+        <div class="records-row">
+          <div class="record-item">
+            <span class="label">MEJOR COMBO</span>
+            <span id="start-best-combo" class="value-sm">0</span>
+          </div>
+          <div class="record-item">
+            <span class="label">MÁS LÍNEAS</span>
+            <span id="start-max-lines" class="value-sm">0</span>
+          </div>
+        </div>
+
+        <button id="start-btn">Jugar</button>
+        <button id="reset-records-btn" class="secondary-btn">Reiniciar récords</button>
+      </div>
+    </div>
+
     <div id="overlay" class="overlay hidden">
       <div class="overlay-box">
         <div id="game-over-view">
           <p id="overlay-title">GAME OVER</p>
           <p id="overlay-score"></p>
+
+          <div id="gameover-extra" class="gameover-extra hidden">
+            <div class="name-entry">
+              <input type="text" id="name-input" maxlength="10" placeholder="Tu nombre" />
+              <button id="save-score-btn">Guardar</button>
+            </div>
+
+            <div class="leaderboard-section">
+              <span class="label">TOP 5</span>
+              <ol id="overlay-leaderboard-list" class="leaderboard-list"></ol>
+            </div>
+
+            <div class="records-row">
+              <div class="record-item">
+                <span class="label">MEJOR COMBO</span>
+                <span id="overlay-best-combo" class="value-sm">0</span>
+              </div>
+              <div class="record-item">
+                <span class="label">MÁS LÍNEAS</span>
+                <span id="overlay-max-lines" class="value-sm">0</span>
+              </div>
+            </div>
+          </div>
+
           <button id="restart-btn" class="menu-btn">Reiniciar</button>
         </div>
 
